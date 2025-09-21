@@ -1,0 +1,154 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //1.[   function scoped var   ]
+        
+        var emp1=10;
+        var emp2=10;
+        var total=emp1+emp2;
+        console.log(total)
+
+
+
+
+
+
+        //2.[   block scoped  let  ]
+
+        let l=10;
+        let m=10;
+        let n=l+m
+        console.log(n)
+
+
+
+
+
+        //3.[  const (block-scoped) cant be reassigned  ]
+        
+        z=10;
+        console.log(z)
+
+
+
+
+
+
+        //4. [      primitive data type      ]
+
+        let name="mari";
+        console.log(typeof name);      //string
+
+        let age=20;
+        console.log(typeof age)        //integer,decimal
+
+        let active=true;
+        console.log(typeof active)    //boolean
+
+        let data=null;
+        console.log(typeof data)       //object
+
+        let x;
+        console.log(x)                //undefined
+
+        // string types
+
+             //1.singele quotes, 2.double quotes, 3.template literals, 4.string with escape characters, 5.multiline string
+
+
+        let std='mari'
+        let std2="gayu"
+        console.log(std,std2)
+        
+        //template literals   ` ${key}  `
+
+        let student="mari"
+        let str=`hello,${student}!`;
+        console.log(str)
+
+        let name1='maiammal'
+        let age1=20
+        let val=`iam ${name1} and iam ${age} years old`
+        console.log(val)
+
+        // expreassion in templates
+
+        let a=20;
+        let b=30
+        let c=`${a}+${b} is ${a+b}`
+        console.log(c)
+
+        // function call inside template literals             `    ${key}    ` 
+
+        //1.
+
+        function hello(user){
+            return `hello ${user}!`
+        }
+        let var1=hello("mari")
+        console.log(var1)
+
+
+        //2.
+        function dept(age){
+            console.log(`${age}`)
+        }
+        dept(20)
+
+
+
+        // JAVASCRIPT  TYPE coercion
+
+        // it automatically converts one data type to another
+
+        //types  1.impicit  , 2.explicit
+
+
+
+        //1. IMPLICIT
+
+         // js converts types automatically
+
+
+        // string coercion
+         console.log("5"+1)     //51   
+
+
+        // number coercion
+         console.log("5" -2)     //3 
+         console.log("2"*"5")    //10
+         console.log(true + 1)   //1   because true->1 ,  false->0
+
+
+         //2. EXPLICIT
+
+         //you converts types using functions like Number(),string(),Boolean()
+
+         //conver to number
+         console.log(Number("55"))   //123 -> string to number
+
+         //convert to string
+         console.log(String(135))     //"135"  number to string
+
+         //convert to boolean
+         console.log(Boolean(0))           //false
+         console.log(Boolean("hello"))     //true
+         
+         // special cases  [null,undefined,NaN]
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

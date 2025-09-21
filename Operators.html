@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+ //1.Arithmetic operators
+       /*  let a=10;
+        let b=20;
+        console.log("sum:",a+b);
+        console.log("difference:",a-b);
+        console.log("product:",a*b);
+        console.log("divide quotient:",a/b);
+        console.log("remainder:",a%b); */
+
+
+
+ //2.Assignment operators
+      /*   let x=20;
+        x+=2;
+        console.log(x);
+
+        let y=20
+        y*=2
+        console.log(y);
+
+        let z=5;
+        z-=2;
+        console.log(z)
+
+        let l=5;
+        l/=2
+        l%=2;
+        console.log(l) */
+
+
+        //advance
+        //1.chain assignment
+        let a,b,c;
+        a=b=c=10;
+        console.log(a,b,c)         //10 10 10
+
+        //2.ass with condition
+        let score;
+        if((score=50)>40){
+            console.log("pass")
+            console.log(score)
+        } 
+
+        //3.object property assignment
+        let person={name:"mari",age:19}
+        person.age+=1;
+        person.place="tvl";
+        console.log(person)
+
+
+        //4.Array with operators
+        let numbers=[10,20,30];
+        numbers[0]+=2;
+        numbers[1]-=2;
+        numbers[2]*=2;
+        console.log(numbers);
+
+
+        //5.complex expression
+        //1.
+        let x=10,y=5,z=2;
+        x+=y*z;
+        console.log(x)
+
+        //2.
+        let num1=10,num2=20,num3=30;
+        num2*=num1+num3;
+        console.log(num2)
+
+        
+//3.comparison operator
+      
+       let n1=10,n2="10"
+       console.log(n1 == n2);         //true
+       console.log(n1 === n2);        //false  strictly compared
+       console.log(n1 != n2);        //false
+       console.log(n1 !== n2);        //true
+
+
+    //boolean comparison
+    console.log(true==1);     //true
+    console.log(false==0);    //true
+    console.log(true===1);    //false  (diff types)
+
+    //compare null and ud
+    console.log(null==undefined);         //true 
+    console.log(null===undefined);       //false
+    console.log(null>0);                  //false
+    console.log(null>=0)                  //true
+
+    //chain comparison
+    let aa=10;
+    console.log(x>5 && x<15);       //true
+    console.log(x<5 && x<15);        //false
+ 
+    console.log(x>5 || x>15)         // true (any one condition is true the ans also true)
+
+
+    //object comparison 
+    let obj1={name:"mari"};
+    let obj2={name:"mari"};
+    let obj3=obj1;
+    console.log(obj1===obj2);    //false (because diff objects)
+    console.log(obj1===obj3)     //true (because same reference)
+
+
+    //Array comparison
+    let arr1=[1,2,3];
+    let arr2=[1,2,3];
+    console.log(arr1===arr2);    //false
+    let arr3=arr1;
+    console.log(arr1===arr3)     //true
+
+
+    //using comparison in ternary optr
+    //1.
+    let age=22;
+    let status=(age>18 && age<60)?"adult":"not adult";
+    console.log(status);
+
+    //2.
+    let score1=85;
+    let grade=(score1>=90)?"A grade":
+    (score1>=80)?"B grade":
+    (score1>=50)? "C grade" :  "fail";
+    console.log(grade)
+
+
+    //type coercion in comparison
+    console.log("5">3)               //true
+    console.log("5"==5)              //true
+    console.log("5"===5)             //false
+
+    //numeric expression
+    let x1=10, x2=20, x3=30;
+    console.log(x1+x2 >= x3);
+    console.log(x3-x1 < 20);
+   
+
+
+ //sample   
+
+console.log("mari")
+
+//4. Logical operator
+
+      let age1=20;
+      console.log(age1>=18 && age<30);
+      console.log(age1>=18 || age1<30);
+      console.log(!age1>18);
+
+
+
+//5.unary operator  (pre and post increment,decrement)
+
+   let y1=5;
+   console.log(y1++)    //post inc
+   console.log(y1)
+   let y2=2
+   console.log(++y2)     //pre increment
+
+   let y3=10;
+   console.log(--y3);   //pre dec
+   let y4=2
+   console.log(y4++);    //post dec
+   console.log(y4)
+
+
+
+
+//6.ternary operator
+
+      let marks=75;
+      let result=(marks>=80)?"super":"bad";
+      console.log(result)
+
+
+
+//7.Bitwise operator
+
+  let p=5;
+  let q=3;
+  console.log(p & q);
+  console.log(p | q);
+  console.log(p ^ q)
+
+
+
+    </script>
+</body>
+</html>
